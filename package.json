@@ -1,8 +1,9 @@
 {
   "name": "egan-realty",
   "version": "1.0.0",
-  "description": "Application that lets you keep track of movies to watch and rate movies watched.",
+  "description": "Egan Realty",
   "scripts": {
+    "storybook": "start-storybook -p 9001",
     "clean": "node tools/clean",
     "build": "node tools/build",
     "start": "node tools/start",
@@ -13,11 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/marijohannessen/egan-realty"
   },
-  "keywords": [
-    "react",
-    "movie",
-    "list"
-  ],
+  "keywords": [],
   "author": "Mari Johannessen",
   "license": "ISC",
   "bugs": {
@@ -57,6 +54,7 @@
     "webpack-stream": "3.2.0"
   },
   "devDependencies": {
+    "@kadira/storybook": "^1.38.0",
     "babel-eslint": "6.0.4",
     "babel-preset-stage-1": "^6.5.0",
     "cpy": "^4.0.1",
@@ -73,12 +71,13 @@
     "re-base": "^1.5.1",
     "react-router": "^2.4.1",
     "require-dir": "^0.3.0",
-    "sass-loader": "^3.2.0",
+    "sass-loader": "^3.2.3",
     "style-loader": "^0.13.1",
     "supertest": "1.2.0",
     "task": "^0.1.0",
     "uglify-js": "^2.6.2",
-    "webpack-dev-middleware": "^1.6.1"
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-validator": "^2.2.2"
   },
   "babel": {
     "presets": [

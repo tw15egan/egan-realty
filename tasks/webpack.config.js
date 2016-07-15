@@ -12,6 +12,7 @@ const path = require('path');
 const webpack = require('webpack');
 const extend = require('extend');
 const pkg = require('../package.json');
+const validate = require('webpack-validator')
 
 const isDebug = !(process.argv.includes('--release') || process.argv.includes('-r'));
 const isVerbose = process.argv.includes('--verbose') || process.argv.includes('-v');
@@ -85,4 +86,4 @@ if (!isDebug) {
   config.plugins.push(new webpack.optimize.AggressiveMergingPlugin());
 }
 
-module.exports = config;
+module.exports = validate(config);
