@@ -1,7 +1,5 @@
 'use strict';
 
-require('../scss/critical.scss');
-
 import Header from './components/header';
 import Content from './components/content';
 
