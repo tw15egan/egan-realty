@@ -4,7 +4,8 @@ const React = require('react');
 const Section = React.createClass({
   render : function() {
     return (
-      <section className="section">Section
+      <section className="section">
+        {this.props.children}
       </section>
     )
   }
