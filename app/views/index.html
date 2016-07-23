@@ -3,32 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Egan Realty</title>
-  <noscript id="deferred-styles">
-    <link rel="stylesheet" href="css/main.css">
-  </noscript>
+  <script src="https://use.typekit.net/eyg6gnx.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 <body>
   <main id="app"></main>
-
-  <script>
-     console.time('react-app');
-
-     var loadDeferredStyles = function () {
-       var addStylesNode = document.getElementById('deferred-styles');
-       var replacement = document.createElement('div');
-       replacement.innerHTML = addStylesNode.textContent;
-       document.body.appendChild(replacement);
-       addStylesNode.parentElement.removeChild(addStylesNode);
-     };
-
-     var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-       webkitRequestAnimationFrame || msRequestAnimationFrame;
-
-     if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-     else window.addEventListener('load', loadDeferredStyles);
-   </script>
-   <script async src="js/bundle.js"></script>
-
 </body>
 </html>
