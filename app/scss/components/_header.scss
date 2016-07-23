@@ -1,11 +1,36 @@
 .header {
-  height: 100px;
+  height: 80px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
+  padding: 0 2rem .5rem 2rem;
+  background-color: $white;
+  color: $green__10;
+  border-bottom: 7px solid $green__20;
   
   &__title {
-    font-size: 1.5rem;
-    font-family: "mr-eaves-sans";
+    font-family: "omnes-pro";
+    font-size: 2rem;
+    font-weight: 400;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+  a {
+    text-decoration: none;
+    color: $green__00;
+    font-size: .8rem;
+    
+    &:hover {
+      color: $green__20;
+    }
+  }
+  
+  &__phone {
+    
   }
 }
