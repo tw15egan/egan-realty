@@ -1,14 +1,14 @@
 const React = require('react');
 
 // <Header />
-const Header = React.createClass({
-  render : function() {
+class Header extends React.Component {
+  render() {
     return (
       <header>
-        <h1>Egan Realty</h1>
+        <h1>Egan Test</h1>
       </header>
     )
   }
-});
+};
 
 export default Header;
