@@ -4,8 +4,8 @@ const React = require('react');
 class Header extends React.Component {
   render() {
     return (
-      <header>
-        <h1>Egan Test</h1>
+      <header className="header">
+        <h1 className="header__title">Egan Test</h1>
       </header>
     )
   }
