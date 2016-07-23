@@ -2,10 +2,6 @@
 @import 'partials/typography';
 @import 'partials/layout';
 @import 'critical';
-
-header {
-  padding: 2em;
-  border-bottom: 3px solid black;
-}
+@import 'components/main';
 
 
