@@ -7,7 +7,6 @@
     "clean": "node tools/clean",
     "build": "webpack",
     "start": "webpack-dev-server",
-    "dev": "gulp",
     "deploy": "node tools/deploy.gh --release"
   },
   "repository": {
