@@ -15,7 +15,7 @@ const common = {
   entry: ['webpack/hot/dev-server', PATHS.app],
   output: {
     path: PATHS.build,
-    publicPath: '/egan-realty/'
+    publicPath: '/egan-realty/',
     filename: 'bundle.js',
   },
   module: {
