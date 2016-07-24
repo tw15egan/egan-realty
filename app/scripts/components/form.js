@@ -75,7 +75,7 @@ class Form extends React.Component {
         <input type="hidden" name="_next" value="/" />
         <input type="text" name="_gotcha" className="form__hidden"/>
         <div className="form__container form__container--transparent">
-          <button type="submit" className="form__button">Send Message</button>
+          <button type="submit" className="form__button">Send Us a Message</button>
         </div>
       </form>
     )
