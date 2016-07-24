@@ -56,27 +56,27 @@ class Form extends React.Component {
             <h3>We will be in touch as soon as possible.</h3>
           </div>
         </div>
-        <fieldset className="form__container">
+        <div className="form__container">
           <input type="text" className="form__input" ref="name" name="name" onInput={this.shrinkLabel} required />
           <label htmlFor="name" className="form__label">Full Name</label>
-        </fieldset>
-        <fieldset className="form__container">
+        </div>
+        <div className="form__container">
           <input type="email" className="form__input" ref="email" name="email" onInput={this.shrinkLabel} required />
           <label htmlFor="email" className="form__label">Email Address</label>
-        </fieldset>
-        <fieldset className="form__container">
+        </div>
+        <div className="form__container">
           <input type="tel" className="form__input" ref="phone" name="phone" onInput={this.shrinkLabel} required />
           <label htmlFor="phone" className="form__label">Phone Number</label>
-        </fieldset>
-        <fieldset className="form__container">
+        </div>
+        <div className="form__container form__container--large">
           <textarea type="text" className="form__message" name="message" ref="message" onInput={this.shrinkLabel} required ></textarea>
           <label htmlFor="message" className="form__label">Message</label>
-        </fieldset>
+        </div>
         <input type="hidden" name="_next" value="/" />
         <input type="text" name="_gotcha" className="form__hidden"/>
-        <fieldset className="form__container">
+        <div className="form__container form__container--transparent">
           <button type="submit" className="form__button">Send Message</button>
-        </fieldset>
+        </div>
       </form>
     )
   }
