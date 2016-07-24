@@ -12,7 +12,7 @@ const PATHS = {
 }
 
 const common = {
-  entry: ['webpack/hot/dev-server', PATHS.app],
+  entry: [PATHS.app],
   output: {
     path: PATHS.build,
     publicPath: '/egan-realty/',
@@ -80,4 +80,4 @@ switch(process.env.npm_lifecycle_event) {
   );
 }
 
-module.exports = validate(config);
+module.exports = config;

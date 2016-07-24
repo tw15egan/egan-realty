@@ -31,7 +31,7 @@ class App extends React.Component {
     setTimeout(() => {
       welcome.classList.add('popup');
       form.classList.add('popup');
-    }, 1000);
+    }, 300);
   }
 
   render() {

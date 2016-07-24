@@ -1,5 +1,5 @@
 const React = require('react');
-import { GoogleMapLoader, GoogleMap, Marker, SearchBox } from "react-google-maps";
+import { GoogleMapLoader, GoogleMap, Marker, InfoWindow } from "react-google-maps";
 
 // <Map />
 class Map extends React.Component {
