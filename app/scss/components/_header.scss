@@ -5,32 +5,31 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 1rem 0 1rem 2rem;
+  padding: 1rem 2rem 1rem 5rem;
   background: $white;
   color: #087301;
-  border-bottom: 7px solid #087301;
+  border-bottom: 7px solid darken($green__20, 10%);
 
 
   &__title {
-    // display: flex;
-    // flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 
     &--name {
-      opacity: 1;
       font-size: 3rem;
-      font-weight: 400;
-
+      font-weight: 700;
+      color: darken($green__20, 10%);
+      margin-bottom: -.5rem;
     }
 
     &--tag {
       font-family: "omnes-pro";
-      margin-left: .5rem;
-      color: $green__20;
-      opacity: .75;
-      font-size: 1.6rem;
-      // font-style: italic;
-      font-weight: 300;
+      // margin-left: .75rem;
+      color: darken($green__20, 5%);
+      font-size: 1rem;
+      font-weight: 400;
     }
   }
 
@@ -52,7 +51,6 @@
   justify-content: flex-end;
   align-items: flex-end;
   margin-right: 2rem;
-  margin-bottom: .25rem;
 
   a {
     text-decoration: none;
@@ -67,7 +65,7 @@
     justify-content: flex-start;
     align-items: center;
     opacity: .75;
-    margin: 0 2rem .25rem 0;
+    margin: 0 2rem .75rem 0;
     transform: translateX(100%);
     background-repeat: no-repeat;
     background-size: 18px;

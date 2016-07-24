@@ -23,8 +23,18 @@ const Rebase = require('re-base');
 import 'babel-polyfill';
 
 // <App />
-var App = React.createClass({
-  render : function() {
+class App extends React.Component {
+  componentDidMount() {
+    const welcome = document.querySelector('.welcome');
+    const form = document.querySelector('.form');
+
+    setTimeout(() => {
+      welcome.classList.add('popup');
+      form.classList.add('popup');
+    }, 1000);
+  }
+
+  render() {
     return (
       <div>
         <Header />
@@ -32,6 +42,6 @@ var App = React.createClass({
       </div>
     )
   }
-});
+};
 
 ReactDOM.render(<App />, document.querySelector('#app'));
