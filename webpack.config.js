@@ -36,11 +36,11 @@ const common = {
         loaders: ['style', 'css?sourceMap', 'sass?sourceMap']
       },
       {
-        test: /\.(png|jpg|jpeg)$/,
+        test: /\.(png|jpg|jpeg|svg)$/,
         loader: 'url-loader'
       },
       {
-        test: /\.svg/, 
+        test: /\.svg/,
         loader: 'svg-url-loader'
       }
     ]
@@ -61,7 +61,7 @@ var config;
 switch(process.env.npm_lifecycle_event) {
   case 'build':
     config = merge(
-      common, 
+      common,
       {
         devtool: 'source-map'
       },
@@ -70,7 +70,7 @@ switch(process.env.npm_lifecycle_event) {
     break;
   default:
     config = merge(
-      common, 
+      common,
       {
         devtool: 'eval-source-map'
       },
