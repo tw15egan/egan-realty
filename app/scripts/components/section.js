@@ -1,13 +1,14 @@
 const React = require('react');
 
 // <Section />
-const Section = React.createClass({
-  render : function() {
+class Section extends React.Component {
+  render() {
     return (
-      <section className="section">Section
+      <section className="section">
+        {this.props.children}
       </section>
     )
   }
-});
+};
 
 export default Section;
