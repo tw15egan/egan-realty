@@ -1,5 +1,6 @@
 $bg-image: url('./../img/6.jpg');
 
+
 .hero {
   min-height: 100%;
   background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) 100%), $bg-image no-repeat center left fixed;
@@ -11,9 +12,8 @@ $bg-image: url('./../img/6.jpg');
   .form {
     width: 28rem;
     align-self: flex-end;
-    margin: 5rem 1.5rem 5rem 2rem;
-    padding: 2rem;
     background-color: rgba($green__50, .35);
+    margin: 5rem 4rem 5rem 2rem;
     transform: scale(0);
     transition-delay: .5s;
     transition: .5s;
