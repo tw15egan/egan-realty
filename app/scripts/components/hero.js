@@ -1,5 +1,4 @@
 const React = require('react');
-var bg = require('../../img/1.jpeg');
 import Form from './form';
 
 // <Hero />

@@ -2,6 +2,7 @@ const React = require('react');
 import Section from './section';
 import Form from './form';
 import Hero from './hero';
+import Map from './map';
 
 class Content extends React.Component {
   render() {
@@ -12,6 +13,7 @@ class Content extends React.Component {
         </Section>
         <Section>
         </Section>
+        <Map />
       </div>
     )
   }
