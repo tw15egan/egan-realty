@@ -1,6 +1,5 @@
 const React = require('react');
 import Form from './form';
-import Introduction from './introduction';
 import Welcome from './welcome';
 
 // <Hero />

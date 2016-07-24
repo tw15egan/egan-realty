@@ -3,6 +3,7 @@ import Section from './section';
 import Form from './form';
 import Hero from './hero';
 import Map from './map';
+import About from './about';
 
 class Content extends React.Component {
   render() {
@@ -12,6 +13,7 @@ class Content extends React.Component {
           <Hero />
         </Section>
         <Section>
+          <About />
         </Section>
         <Map />
       </div>
