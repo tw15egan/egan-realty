@@ -1,0 +1,21 @@
+.menu {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+
+  ul {
+    display: flex;
+    list-style: none;
+
+    li {
+      padding: 1rem;
+      margin: 0 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
