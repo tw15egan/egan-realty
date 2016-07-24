@@ -5,5 +5,11 @@
 @import 'components/main';
 
 * {
+  box-sizing: border-box;
   transition: 200ms;
+}
+
+body {
+  display: flex;
+  
 }

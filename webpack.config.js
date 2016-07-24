@@ -33,6 +33,14 @@ const common = {
         test: /\.scss$/,
         include: PATHS.app,
         loaders: ['style', 'css?sourceMap', 'sass?sourceMap']
+      },
+      {
+        test: /\.(png|jpg|jpeg)$/,
+        loader: 'url-loader'
+      },
+      {
+        test: /\.svg/, 
+        loader: 'svg-url-loader'
       }
     ]
   },
