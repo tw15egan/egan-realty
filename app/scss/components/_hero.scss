@@ -3,9 +3,9 @@ $bg-image: url('../img/6.jpg');
 .hero {
   width: 100vw;
   min-height: 100%;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5) 100%), $bg-image no-repeat center left fixed;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) 100%), $bg-image no-repeat center left fixed;
   background-size: cover;
-  padding-top: 100px;
+  padding-top: 110px;
   display: flex;
   justify-content: space-between;
 
@@ -13,6 +13,6 @@ $bg-image: url('../img/6.jpg');
     width: 28rem;
     align-self: flex-end;
     margin: 5rem 4rem 5rem 2rem;
-    background-color: rgba(darken($green__00, 5%), .5);
+    background-color: rgba(darken($green__10, 20%), .5);
   }
 }
