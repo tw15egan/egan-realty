@@ -28,7 +28,6 @@ var App = React.createClass({
     return (
       <div>
         <Header />
-        <Hero />
         <Content />
       </div>
     )

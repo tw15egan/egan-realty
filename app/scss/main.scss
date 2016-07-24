@@ -9,7 +9,11 @@
   transition: 200ms;
 }
 
+html {
+  width: 100%;
+}
+
 body {
   display: flex;
-  
+  width: 100%;
 }
