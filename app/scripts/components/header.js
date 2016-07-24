@@ -8,16 +8,16 @@ class Header extends React.Component {
     return (
       <header className="header">
         <h1 className="header__title">
-        <span className="header__title--name">EGAN</span>
-        <span className="header__title--tag">Realty & Appraisals</span>
+          <span className="header__title--name">EGAN</span>
+          <span className="header__title--tag">Realty & Appraisals</span>
         </h1>
         <div className="right-content">
           <Menu />
-          <div className="contact">
-            <a href="tel:518-370-0256" className="contact__item contact__item--phone">
+          <div className="contact-header">
+            <a href="tel:518-370-0256" className="contact-header__item contact-header__item--phone">
               <span>(518) 370-0256</span>
             </a>
-            <a href="mailto:tw15egan@gmail.com" className="contact__item contact__item--email">
+            <a href="mailto:tw15egan@gmail.com" className="contact-header__item contact-header__item--email">
               <span>eganappr@aol.com</span>
             </a>
           </div>
