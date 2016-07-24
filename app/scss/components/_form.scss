@@ -4,6 +4,9 @@
   width: 23rem;
   position: relative;
   padding: 1rem;
+  transform: scale(0);
+  transition-delay: .5s;
+  transition: .5s;
 
   &__confirmation {
     width: 100%;
@@ -140,5 +143,9 @@
     &:hover {
       background-color: lighten($green__20, 5%);
     }
+  }
+
+  &.popup {
+    transform: scale(1);
   }
 }

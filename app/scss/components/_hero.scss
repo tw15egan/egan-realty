@@ -7,11 +7,12 @@ $bg-image: url('../img/6.jpg');
   background-size: cover;
   padding-top: 100px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 
   .form {
+    width: 28rem;
     align-self: flex-end;
-    margin: 5rem 3rem;
-    background-color: rgba(black, .5);
+    margin: 5rem 4rem 5rem 2rem;
+    background-color: rgba(darken($green__00, 5%), .5);
   }
 }

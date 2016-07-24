@@ -1,0 +1,37 @@
+.welcome {
+  display: flex;
+  margin: 5rem 0 0 3rem;
+  width: 60%;
+  padding: 1rem 2rem 2rem;
+  flex-direction: column;
+  transform: scale(0);
+  transition: .5s;
+  transition-delay: .2s;
+
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    width: 95%;
+    line-height: 1.25;
+    color: white;
+  }
+
+  p {
+    font-size: 1.5rem;
+    width: 80%;
+    line-height: 1.5;
+    color: white;
+
+    span {
+      font-size: 1.65rem;
+      margin-top: .75rem;
+      display: block;
+      font-weight: 700;
+    }
+  }
+
+  &.popup {
+    transform: scale(1);
+  }
+}
