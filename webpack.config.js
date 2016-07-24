@@ -12,10 +12,12 @@ const PATHS = {
 }
 
 const common = {
-  entry: [PATHS.app],
+  entry: {
+    app: PATHS.app
+  },
   output: {
     path: PATHS.build,
-    publicPath: '/egan-realty/',
+    // publicPath: '/egan-realty/',
     filename: 'bundle.js',
   },
   module: {

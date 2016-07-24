@@ -1,6 +1,3 @@
-@import 'partials/colors';
-@import 'partials/typography';
-@import 'partials/layout';
 @import 'reset';
 @import 'components/main';
 
@@ -11,10 +8,13 @@
 
 html {
   width: 100%;
-  transform: translateZ(0);
+
 }
 
 body {
-  display: flex;
+  width: 100%;
+}
+
+#app, .container {
   width: 100%;
 }

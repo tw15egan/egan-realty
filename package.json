@@ -4,10 +4,8 @@
   "description": "Egan Realty",
   "scripts": {
     "storybook": "start-storybook -p 9001",
-    "clean": "node tools/clean",
     "build": "webpack",
     "start": "webpack-dev-server",
-    "dev": "gulp",
     "deploy": "gh-pages -d app/dist"
   },
   "repository": {

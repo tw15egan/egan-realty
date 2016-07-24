@@ -1,8 +1,8 @@
 const React = require('react');
 import Section from './section';
-import Form from './form';
 import Hero from './hero';
-import Map from './map';
+import Contact from './contact';
+import Footer from './footer'
 
 class Content extends React.Component {
   render() {
@@ -13,7 +13,10 @@ class Content extends React.Component {
         </Section>
         <Section>
         </Section>
-        <Map />
+        <Section>
+          <Contact />
+        </Section>
+        <Footer />
       </div>
     )
   }

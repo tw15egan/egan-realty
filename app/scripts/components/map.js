@@ -5,8 +5,16 @@ import { GoogleMapLoader, GoogleMap, Marker, InfoWindow } from "react-google-map
 class Map extends React.Component {
   constructor(props) {
     super(props);
-    
-    this.state = {
+  }
+  
+  renderMarker(marker, index) {
+    return (
+      <Marker key={index} position={marker.position} />
+    )
+  }
+  
+  render() {
+    const state = {
       center: {
         lat: 42.8052279,
         lng: -73.9067515,
@@ -17,26 +25,12 @@ class Map extends React.Component {
           showInfo: true
         }
       ]
-    }
-  }
-  
-  renderMarker(marker, index) {
+    };
+    
     return (
-      <Marker key={index} position={marker.position} />
-    )
-  }
-  
-  render() {
-    return (
-    <section style={{height: "100%"}}>
       <GoogleMapLoader
         containerElement={
-          <div
-            style={{
-              height: "500px",
-              width: "100vw"
-            }}
-          />
+          <div className="map" />
         }
         googleMapElement={
           <GoogleMap
@@ -49,11 +43,10 @@ class Map extends React.Component {
               disableDefaultUI: true,
             }}
           >
-            {this.state.markers.map(this.renderMarker)}
+            {state.markers.map(this.renderMarker)}
           </GoogleMap>
         }
       />
-    </section>
   );
   }
 };
