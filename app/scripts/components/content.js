@@ -2,8 +2,8 @@ const React = require('react');
 import Section from './section';
 import Form from './form';
 
-const Content = React.createClass({
-  render : function() {
+class Content extends React.Component {
+  render() {
     return (
       <div className="container">
         <Section>
@@ -12,6 +12,6 @@ const Content = React.createClass({
       </div>
     )
   }
-});
+};
 
 export default Content;
