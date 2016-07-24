@@ -12,9 +12,7 @@ const PATHS = {
 }
 
 const common = {
-  entry: {
-    app: PATHS.app
-  },
+  entry: ['webpack/hot/dev-server', PATHS.app],
   output: {
     path: PATHS.build,
     filename: 'bundle.js',
