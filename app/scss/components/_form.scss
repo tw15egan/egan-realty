@@ -1,9 +1,9 @@
 .form {
   display: flex;
   flex-direction: column;
-  width: 20rem;
+  width: 23rem;
   position: relative;
-  background-color: white;
+  padding: 1rem;
 
   &__confirmation {
     width: 100%;
@@ -17,6 +17,7 @@
     flex-direction: column;
     justify-content: space-between;
     opacity: 0;
+    display: none;
 
     div {
       flex: 10;
@@ -48,26 +49,34 @@
     &.show {
       opacity: 3;
       z-index: 3;
+      display: inherit;
     }
+  }
+
+  &__input {
+    height: 3.5rem;
+    padding: 0;
   }
 
   &__container {
     position: relative;
     border: none;
     margin: .5rem 0;
-  }
-
-  &__input,
-  &__container {
+    background-color: white;
     height: 3.5rem;
-    padding: 0;
+
+    &--large {
+      height: 10rem;
+    }
+
+    &--transparent {
+      background-color: transparent;
+    }
   }
 
   &__input,
   &__message {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     padding: 0 .8rem;
     z-index: 2;
     background: transparent;
@@ -119,10 +128,9 @@
   }
 
   &__button {
-    margin-top: 7rem;
     padding: 1rem;
     border: none;
-    background-color: $green__20;
+    background-color: $green__10;
     font-size: 1rem;
     width: 100%;
     color: white;
