@@ -8,7 +8,10 @@ class Contact extends React.Component {
     return (
       <div className="contact">
         <Map />
-        <Form />
+        <div className="contact__form">
+          <span>Get in touch</span>
+          <Form />
+        </div>
       </div>
     )
   }

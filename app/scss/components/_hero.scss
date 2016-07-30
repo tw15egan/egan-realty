@@ -17,10 +17,5 @@ $bg-image: url('./../img/6.jpg');
     transform: scale(0);
     transition-delay: .5s;
     transition: .5s;
-    
-    .form__input,
-    .form__message {
-      border: 2px solid transparent;
-    }
   }
 }

@@ -39,7 +39,7 @@ class Form extends React.Component {
     const inputFieldLabel = document.querySelector('label[for="'+ inputFieldName + '"]');
     inputFieldLabel.classList.add('active');
     inputField.classList.add('active');
-
+    console.log(inputField.value);
     if (inputField.value === '') {
       inputFieldLabel.classList.remove('active');
       inputField.classList.remove('active');
