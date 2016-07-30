@@ -3,7 +3,6 @@
   flex-direction: column;
   width: 23rem;
   position: relative;
-  padding: 1rem;
 
   &__confirmation {
     width: 100%;
@@ -57,6 +56,8 @@
     height: 3.5rem;
     padding: 0;
     border: none;
+    font-family: $secondary-font-family;
+    font-weight: 600;
   }
 
   &__container {
@@ -85,8 +86,7 @@
     background: transparent;
     font-size: 1rem;
     width: 100%;
-    border-radius: 3px;
-    border: 1px solid #aeaeae;
+    border: 3px solid #ababab;
 
     &:focus + label {
       color: $green__20;
@@ -95,7 +95,8 @@
     &.active {
       padding-top: 1rem;
 
-      &:focus + label {
+      & + label {
+        transform: translateY(-10px);
         color: rgba($green__20, .4);
       }
     }
@@ -111,9 +112,6 @@
     transition: .5s;
 
     &.active {
-      top: .3rem;
-      font-size: .75rem;
-      padding-top: .3rem;
       color: rgba($green__20, .4);
     }
   }

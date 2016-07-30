@@ -1,9 +1,9 @@
 .contact {
-  padding: 0;
+  padding: 2rem 5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   
   @media (max-width: 900px) {
@@ -25,9 +25,36 @@
     }
   }
   
+  &__form {
+    flex: 4;
+    min-height: 500px;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    span {
+      display: inline;
+      font-weight: 200;
+      font-size: 1.75rem;
+      padding-bottom: .5rem;
+    }
+  }
+  
   .form {
     width: 100%;
-    flex: 4;
+    
+    &__container {
+      margin: 0 0 1rem;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+      
+    &__button {
+      height: 100%;
+    }
   }
   
   .map {
