@@ -4,13 +4,25 @@
   height: 30rem;
   color: white;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @include breakpoint('bp--sm') {
+    height: auto;
+  }
 
   .icons {
     display: flex;
     list-style: none;
+
+    @include breakpoint('bp--sm') {
+      flex-direction: column;
+      padding: 3rem 5rem;
+    }
+
+    @include breakpoint('bp--xs') {
+      padding: 3rem 0;
+    }
 
     li {
       display: flex;
@@ -18,6 +30,10 @@
       align-items: center;
       text-align: center;
       margin: 0 1rem;
+
+      @include breakpoint('bp--sm') {
+        margin: 2rem 1rem;
+      }
 
       h2 {
         font-size: 1.75rem;

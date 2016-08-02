@@ -12,6 +12,14 @@
   box-shadow: 0px 8px 16px -8px rgba(0,0,0,0.42);
   // border-bottom: 7px solid darken($green__20, 10%);
 
+  @include breakpoint('bp--sm') {
+    padding: 3rem;
+  }
+
+  @include breakpoint('bp--xs') {
+    padding: 1rem;
+  }
+
   .right-content {
     display: flex;
     align-items: center;
