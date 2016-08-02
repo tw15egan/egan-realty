@@ -1,10 +1,11 @@
 const React = require('react');
+import ContactList from './contact-list.js';
 
 class Footer extends React.Component {
   render() {
     return (
       <footer className="footer">
-        <p>Egan Realty</p>
+        <ContactList />
       </footer>
     )
   }

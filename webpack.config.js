@@ -23,6 +23,14 @@ const common = {
   module: {
     loaders: [
       {
+        test: /\.svg$/,
+        loader: 'svg-url-loader'
+      },
+      {
+        test: /\.(png|jpg|jpeg)$/,
+        loader: 'url-loader'
+      },
+      {
         test: /\.js?$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
@@ -34,14 +42,6 @@ const common = {
         test: /\.scss$/,
         include: PATHS.app,
         loaders: ['style', 'css?sourceMap', 'sass?sourceMap']
-      },
-      {
-        test: /\.(png|jpg|jpeg|svg)$/,
-        loader: 'url-loader'
-      },
-      {
-        test: /\.svg/,
-        loader: 'svg-url-loader'
       }
     ]
   },
