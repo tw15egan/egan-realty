@@ -2,6 +2,7 @@ const path = require('path');
 const merge = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const validate = require('webpack-validator');
+const autoprefixer = require('autoprefixer');
 
 // HMR Config
 const parts = require('./libs/parts.js');
@@ -41,9 +42,12 @@ const common = {
       {
         test: /\.scss$/,
         include: PATHS.app,
-        loaders: ['style', 'css?sourceMap', 'sass?sourceMap']
+        loaders: ['style-loader', 'css-loader?sourceMap', 'postcss-loader', 'sass-loader?sourceMap']
       }
     ]
+  },
+  postcss: function () {
+        return [autoprefixer];
   },
   resolve: {
     extensions: ['', '.js', '.json', '.jsx']

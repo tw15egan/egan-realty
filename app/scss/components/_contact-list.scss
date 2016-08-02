@@ -9,37 +9,33 @@
     text-decoration: none;
     color: #333;
     font-size: .875rem;
-    font-weight: 400;
+    font-weight: 300;
   }
 
   &__item {
-    width: 100%;
+    min-width: 142px;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-    opacity: .75;
+    opacity: 1;
     background-repeat: no-repeat;
     background-size: 18px;
-
-    &:nth-child(1){
-      padding-bottom: .5rem;
+    
+    svg {
+      height: 1rem;
+      width: 1rem;
     }
-
+    
     span {
-      padding-left: 2rem;
-    }
-
-    &--email {
-      background-image: url('./../img/close-envelope.svg');
-
-    }
-
-    &--phone {
-      background-image: url('../img/phone-receiver.svg');
+      display: flex;
+      align-items: center;
+      
+      &:first-child {
+        padding-right: .5rem;
+      }
     }
 
     &:hover {
-      opacity: 1;
+      opacity: .75;
     }
   }
 }

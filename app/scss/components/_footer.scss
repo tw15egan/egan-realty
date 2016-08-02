@@ -1,4 +1,36 @@
 .footer {
-  height: 60px;
-  border-top: 5px solid $green__50;
+  height: 80px;
+  padding: 1.2rem 2rem;
+  background: $green__50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $white;
+  font-size: .875rem;
+  
+  .contact-list {
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    a {
+      color: $white;
+      
+      &:first-child {
+        margin-right: .5rem;
+      }
+    }
+    
+    svg {
+      fill: $green__30;
+    }
+  }
+}
+
+.copyright {
+  font-weight: 300;
+  
+  span {
+    color: $green__30;
+    font-family: $base-font-family;
+  }
 }
