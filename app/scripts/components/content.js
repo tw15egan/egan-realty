@@ -4,6 +4,7 @@ import Hero from './hero';
 import Contact from './contact';
 import Footer from './footer'
 import About from './about';
+import Areas from './areas';
 import Services from './services';
 
 class Content extends React.Component {
@@ -13,6 +14,7 @@ class Content extends React.Component {
         <Section>
           <Hero />
         </Section>
+        <Areas />
         <Section>
           <About />
         </Section>

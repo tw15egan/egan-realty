@@ -4,28 +4,34 @@
   height: 30rem;
   color: white;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  ul {
+  .icons {
     display: flex;
     list-style: none;
-    margin-top: 5rem;
 
     li {
-      width: 15rem;
-      height: 20rem;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
+      margin: 0 1rem;
 
       h2 {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
+      }
+
+
+      p {
+        line-height: 1.5;
+        letter-spacing: .5px;
+        margin-top: 1rem;
       }
 
       svg {
-        width: 8rem;
+        width: 7rem;
         fill: white;
         margin-bottom: 2rem;
       }
