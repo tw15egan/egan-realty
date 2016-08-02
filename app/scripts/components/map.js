@@ -14,18 +14,39 @@ class Map extends React.Component {
   }
   
   render() {
-    const state = {
-      center: {
-        lat: 42.8052279,
-        lng: -73.9067515,
-      },
-      markers: [
-        {
-          position: new google.maps.LatLng(42.8055797, -73.906444),
-          showInfo: true
-        }
-      ]
-    };
+    
+    if (google) {
+      console.log('goog');
+      var state = {
+        center: {
+          lat: 42.752532,
+          lng: -73.768126,
+        },
+        markers: [
+          {
+            position: new google.maps.LatLng(42.752532, -73.768126),
+            showInfo: true
+          }
+        ]
+      };
+    } else {
+      console.log('hi');
+      var state = {
+        center: {
+          lat: 42.752532,
+          lng: -73.768126,
+        },
+        markers: [
+          {
+            position: {
+              lat: 42.752532, 
+              lng: -73.768126,
+            },
+            showInfo: true
+          }
+        ]
+      };
+    }
     
     return (
       <GoogleMapLoader
@@ -34,13 +55,13 @@ class Map extends React.Component {
         }
         googleMapElement={
           <GoogleMap
-            ref={(map) => console.log(map)}
-            defaultZoom={15}
-            defaultCenter={{ lat: 42.8052279, lng: -73.9067515 }}
+            defaultZoom={10}
+            defaultCenter={{ lat: 42.752532, lng: -73.768126 }}
             defaultOptions={{
               styles: require("json!./map-styles/pale.json"),
               scrollwheel: false,
               disableDefaultUI: true,
+              draggable: false,
             }}
           >
             {state.markers.map(this.renderMarker)}
