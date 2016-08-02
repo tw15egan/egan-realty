@@ -1,0 +1,13 @@
+@mixin breakpoint($size) {
+  @if map-has-key($breakpoints, $size) {
+    @media screen and (max-width: map-get($breakpoints, $size)) {
+      @content;
+    }
+  }
+
+  @else {
+    @media screen and (max-width: $size) {
+      @content;
+    }
+  }
+}
