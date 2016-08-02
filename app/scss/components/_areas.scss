@@ -1,12 +1,14 @@
 .areas-banner {
-  height: 10rem;
+  height: 8rem;
   background-color: $green__50;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 5rem;
 
   @include breakpoint('bp--sm') {
     height: 15rem;
+    padding: 0 3rem;
   }
 }
 
@@ -15,47 +17,52 @@
   list-style: none;
   align-items: center;
   color: $white;
+  width: 100%;
+  justify-content: center;
 
   li {
-    padding: 1rem 2rem 1rem 1rem;
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.75rem;
+    font-weight: 300;
     display: flex;
+    align-items: center;
 
     @include breakpoint('bp--sm') {
-      font-size: 1.5rem;
-      padding-right: .5rem;
-      text-align: center;
+      // font-size: 1.5rem;
     }
 
     &:after {
-      content: '●';
+      content: '|';
+      font-weight: 500;
+      font-size: 3rem;
       display: block;
-      margin-left: 2.5rem;
-
+      margin-left: 1rem;
+      margin-right: 1rem;
+      
       @include breakpoint('bp--sm') {
-        margin-left: 1.5rem;
-      }
-    }
-
-    &:nth-child(2) {
-
-      &:after {
         display: none;
       }
     }
-
+    
     &:last-child {
-
-      &:after {
+      &::after {
         display: none;
       }
     }
   }
 
   @include breakpoint('bp--sm') {
+    height: 100%;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    
+    li {
+      flex: 1 0 auto;
+      flex-basis: 40%;
+      justify-content: center;
+      margin: 0 2rem;
+      font-weight: 400;
+      padding: 1rem .5rem;
+    }
   }
 }
