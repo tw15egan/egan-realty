@@ -1,5 +1,6 @@
 const React = require('react');
 import Menu from './menu';
+import ContactList from './contact-list.js';
 
 // <Header />
 class Header extends React.Component {
@@ -13,14 +14,7 @@ class Header extends React.Component {
         </h1>
         <div className="right-content">
           <Menu />
-          <div className="contact-header">
-            <a href="tel:518-370-0256" className="contact-header__item contact-header__item--phone">
-              <span>(518) 370-0256</span>
-            </a>
-            <a href="mailto:tw15egan@gmail.com" className="contact-header__item contact-header__item--email">
-              <span>eganappr@aol.com</span>
-            </a>
-          </div>
+          <ContactList />
         </div>
       </header>
     )
