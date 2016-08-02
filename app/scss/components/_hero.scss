@@ -1,20 +1,39 @@
 $bg-image: url('./../img/6.jpg');
 
-
 .hero {
   min-height: 100%;
   background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) 100%), $bg-image no-repeat center left fixed;
   background-size: cover;
   padding-top: 110px;
+  padding-bottom: 3rem;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 
   .form {
     width: 28rem;
-    align-self: flex-end;
+    align-self: flex-start;
     margin: 5rem 4rem 5rem 2rem;
     transform: scale(0);
     transition-delay: .5s;
     transition: .5s;
+
+    @include breakpoint('bp--sm') {
+      width: 100%;
+      margin: 0;
+      padding: 1rem 3rem;
+      align-self: flex-start;
+    }
+
+    @include breakpoint('bp--xs') {
+      width: 100%;
+      margin: 0;
+      padding: 1rem;
+    }
+  }
+
+  @include breakpoint('bp--sm') {
+    flex-direction: column;
+    padding-bottom: 3rem;
   }
 }
