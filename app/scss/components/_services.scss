@@ -4,17 +4,42 @@
   height: 30rem;
   color: white;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  ul {
+  .areas {
     display: flex;
     list-style: none;
-    margin-top: 5rem;
+    margin-bottom: 4rem;
+
+    li {
+      padding: 1rem;
+      font-size: 1.75rem;
+      display: flex;
+
+      &:after {
+        content: '●';
+        display: block;
+        margin-left: 1.5rem;
+      }
+
+      &:last-child {
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .icons {
+    display: flex;
+    list-style: none;
 
     li {
       width: 15rem;
-      height: 20rem;
+      height: 15rem;
       display: flex;
       flex-direction: column;
       align-items: center;
