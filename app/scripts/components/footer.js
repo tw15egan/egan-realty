@@ -6,6 +6,7 @@ class Footer extends React.Component {
     return (
       <footer className="footer">
         <ContactList />
+        <div className="copyright">Copyright <span>&copy;</span> 2016 Egan Appraisals, Inc.</div>
       </footer>
     )
   }

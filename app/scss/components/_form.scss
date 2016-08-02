@@ -32,19 +32,6 @@
       }
     }
 
-    button {
-      margin-top: 0;
-      flex: 1;
-      background-color: $white;
-      color: $green__20;
-      font-weight: 400;
-
-      &:hover {
-        background-color: $white;
-        text-decoration: underline;
-      }
-    }
-
     &.show {
       opacity: 3;
       z-index: 3;
@@ -135,7 +122,7 @@
   &__button {
     padding: 1rem;
     border: none;
-    background-color: $green__10;
+    background-color: #139A43;
     font-size: 1rem;
     width: 100%;
     color: white;
