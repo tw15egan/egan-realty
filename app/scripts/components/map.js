@@ -5,33 +5,10 @@ import { GoogleMapLoader, GoogleMap, Marker, InfoWindow } from "react-google-map
 class Map extends React.Component {
   constructor(props) {
     super(props);
-  }
-  
-  renderMarker(marker, index) {
-    return (
-      <Marker key={index} position={marker.position} />
-    )
-  }
-  
-  render() {
     
-    if (google) {
-      console.log('goog');
-      var state = {
-        center: {
-          lat: 42.752532,
-          lng: -73.768126,
-        },
-        markers: [
-          {
-            position: new google.maps.LatLng(42.752532, -73.768126),
-            showInfo: true
-          }
-        ]
-      };
-    } else {
-      console.log('hi');
-      var state = {
+    this.state = {
+      ready: this.props.ready,
+      marker: {
         center: {
           lat: 42.752532,
           lng: -73.768126,
@@ -45,9 +22,36 @@ class Map extends React.Component {
             showInfo: true
           }
         ]
-      };
+      },
     }
-    
+  }
+  
+  componentWillReceiveProps() {
+    this.setState({
+      ready: true,
+      marker: {
+        center: {
+          lat: 42.752532,
+          lng: -73.768126,
+        },
+        markers: [
+          {
+            position: new google.maps.LatLng(42.752532, -73.768126),
+            showInfo: true
+          }
+        ]
+      }
+    })
+  }
+  
+  renderMarker(marker, index) {
+    return (
+      <Marker key={index} position={marker.position} />
+    )
+  }
+  
+  render() {
+    const marker = this.state.marker.markers;
     return (
       <GoogleMapLoader
         containerElement={
@@ -55,7 +59,7 @@ class Map extends React.Component {
         }
         googleMapElement={
           <GoogleMap
-            defaultZoom={10}
+            defaultZoom={18}
             defaultCenter={{ lat: 42.752532, lng: -73.768126 }}
             defaultOptions={{
               styles: require("json!./map-styles/pale.json"),
@@ -64,7 +68,7 @@ class Map extends React.Component {
               draggable: false,
             }}
           >
-            {state.markers.map(this.renderMarker)}
+            {marker.map(this.renderMarker)}
           </GoogleMap>
         }
       />
