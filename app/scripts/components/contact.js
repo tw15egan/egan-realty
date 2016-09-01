@@ -24,7 +24,7 @@ class Contact extends React.Component {
     if (this.state.ready) {
       return (
         <div className="contact">
-          <Map ready={this.state.ready} />
+          {/* <Map ready={this.state.ready} /> */}
           <div className="contact__form">
             <span>Get in touch</span>
             <Form />
@@ -34,7 +34,7 @@ class Contact extends React.Component {
     } else {
       return (
         <div className="contact">
-          <Map ready={this.state.ready} />
+          {/* <Map ready={this.state.ready} /> */}
           <div className="contact__form">
             <span>Get in touch</span>
             <Form />

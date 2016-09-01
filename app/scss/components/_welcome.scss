@@ -1,20 +1,20 @@
 .welcome {
   display: flex;
-  margin: 5rem 0 0 3rem;
+  margin: 3rem 0 0 3rem;
   width: 60%;
-  padding: 0rem 2rem 2rem;
+  padding: 0rem 2rem 2rem 1rem;
   flex-direction: column;
   transform: scale(0);
-  transition: .5s;
+  transition: 275ms;
   transition-delay: .2s;
 
   h1 {
     font-size: 2.25rem;
-    font-weight: 700;
+    font-weight: 300;
     margin-bottom: 1.25rem;
-    width: 95%;
+    width: 100%;
     line-height: 1.5;
-    color: white;
+    color: $white;
 
     @include breakpoint('bp--sm') {
       font-size: 2.25rem;
@@ -23,16 +23,17 @@
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     width: 80%;
     line-height: 1.5;
-    color: white;
+    font-weight: 400;
+    color: $gray__10;
+    opacity: 1;
 
     span {
-      font-size: 1.65rem;
+      font-size: 1.5rem;
       margin-top: 1.2rem;
       display: block;
-      font-weight: 700;
     }
 
     @include breakpoint('1100px') {

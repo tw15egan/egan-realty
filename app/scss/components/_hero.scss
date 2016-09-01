@@ -1,8 +1,9 @@
 $bg-image: url('./../img/6.jpg');
 
 .hero {
-  min-height: 100%;
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) 100%), $bg-image no-repeat center left fixed;
+  min-height: 100vh;
+  // background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.1) 100%), $bg-image no-repeat center center fixed;
+  background-color: $green__00;
   background-size: cover;
   padding-top: 110px;
   padding-bottom: 3rem;
@@ -13,7 +14,7 @@ $bg-image: url('./../img/6.jpg');
   .form {
     width: 28rem;
     align-self: flex-start;
-    margin: 5rem 4rem 5rem 2rem;
+    margin: 3rem 2rem 5rem 2rem;
     transform: scale(0);
     transition-delay: .5s;
     transition: .5s;

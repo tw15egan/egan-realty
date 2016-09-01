@@ -1,6 +1,6 @@
 .footer {
-  height: 80px;
-  padding: 1.2rem 2rem;
+  height: 60px;
+  padding: 1.2rem 1rem;
   background: $green__50;
   display: flex;
   align-items: center;
@@ -21,7 +21,7 @@
     }
     
     svg {
-      fill: $green__30;
+      fill: $white;
     }
   }
 }
@@ -30,7 +30,7 @@
   font-weight: 300;
   
   span {
-    color: $green__30;
+    color: $white;
     font-family: $base-font-family;
   }
 }
