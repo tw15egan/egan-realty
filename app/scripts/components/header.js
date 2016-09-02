@@ -10,7 +10,7 @@ class Header extends React.Component {
       <header className="header">
         <h1 className="header__title">
           <span className="header__title--name">EGAN</span>
-          <span className="header__title--tag">Appraisals</span>
+          <span className="header__title--tag">APPRAISALS</span>
         </h1>
         <div className="right-content">
           <Menu />

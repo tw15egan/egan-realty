@@ -54,6 +54,7 @@
 
     &__button {
       height: 100%;
+      border: 0;
     }
 
     @include breakpoint('bp--sm') {
