@@ -18,7 +18,7 @@ const common = {
   },
   output: {
     path: PATHS.build,
-    // publicPath: '/egan-realty/',
+    publicPath: '/egan-realty/',
     filename: 'bundle.js',
   },
   module: {
@@ -67,7 +67,7 @@ switch(process.env.npm_lifecycle_event) {
     config = merge(
       common,
       {
-        devtool: 'source-map'
+        devtool: 'cheap-module-source-map'
       },
       parts.minify()
     );
