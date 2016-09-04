@@ -2,10 +2,10 @@ $bg-image: url('./../img/6.jpg');
 
 .hero {
   min-height: 100vh;
-  // background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.1) 100%), $bg-image no-repeat center center fixed;
+  background: linear-gradient(rgba(10,10,10,0.9), rgba(10,10,10,0.25) 100%), $bg-image no-repeat center center;
   background-color: $green__00;
   background-size: cover;
-  padding-top: 110px;
+  padding-top: 108px;
   padding-bottom: 3rem;
   display: flex;
   justify-content: space-between;

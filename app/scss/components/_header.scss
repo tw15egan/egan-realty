@@ -34,17 +34,24 @@
     
       .contact-list {
         transform: translate(2rem);
+        flex-direction: row;
         
         svg {
           height: 1.5rem;
           width: 1.5rem;
         }
         
-        .contact-list__item span {
-          &:nth-child(2) {
-            position: absolute;
-            visibility: hidden;
-            opacity: 0;
+        .contact-list__item {
+          &:nth-child(1) {
+            padding-bottom: 0;
+            margin-right: 1rem;
+          }
+          & span {
+            &:nth-child(2) {
+              position: absolute;
+              visibility: hidden;
+              opacity: 0;
+            }
           }
         }
       }
