@@ -6,19 +6,8 @@ import Hero from './scripts/components/hero'
 
 const React = require('react');
 const ReactDOM = require('react-dom');
-const ReactRouter = require('react-router');
 
 require('./scss/main.scss');
-
-const Router = ReactRouter.Router;
-const Route = ReactRouter.Route;
-const Navigation = ReactRouter.Navigation;
-const History = ReactRouter.History;
-const createBrowserHistory = require('history/lib/createBrowserHistory');
-
-const Rebase = require('re-base');
-
-
 
 import 'babel-polyfill';
 

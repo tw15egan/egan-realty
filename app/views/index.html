@@ -5,12 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://use.typekit.net/eyg6gnx.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
-  <!-- <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
-  <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAaw-3FLM5LAj3kecXBTwAeh6UaLb5bek&libraries=geometry,places,visualization">
-    </script>
 </head>
 <body>
   <main id="app"></main>
+  
+  <script type="text/javascript">
+    function downloadJSAtOnload() {
+    var element = document.createElement("script");
+    element.src = "bundle.js";
+    document.body.appendChild(element);
+    }
+    if (window.addEventListener)
+    window.addEventListener("load", downloadJSAtOnload, false);
+    else if (window.attachEvent)
+    window.attachEvent("onload", downloadJSAtOnload);
+    else window.onload = downloadJSAtOnload;
+  </script>
 </body>
 </html>

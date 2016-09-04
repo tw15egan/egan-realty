@@ -20,6 +20,10 @@
     background-repeat: no-repeat;
     background-size: 18px;
     
+    @include breakpoint('bp--sm') {
+      min-width: 20px;
+    }
+    
     svg {
       height: 1rem;
       width: 1rem;

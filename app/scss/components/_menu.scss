@@ -8,8 +8,10 @@
     list-style: none;
 
     li {
-      padding: 1rem;
-      margin: 0 1rem;
+      white-space: nowrap;
+      display: flex;
+      align-items: flex-end;
+      margin-right: 2rem;
       font-size: 1rem;
       cursor: pointer;
 

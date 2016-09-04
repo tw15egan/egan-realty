@@ -33,7 +33,13 @@ exports.minify = function() {
           screw_ie8: true,
           keep_fnames: true
         }
-      })
+      }),
+      new webpack.DefinePlugin({
+        'process.env': {
+          // This has effect on the react lib size
+          'NODE_ENV': JSON.stringify('production'),
+        }
+      }),
     ]
   };
 }

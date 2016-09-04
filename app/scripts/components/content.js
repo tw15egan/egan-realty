@@ -14,13 +14,13 @@ class Content extends React.Component {
         <Section>
           <Hero />
         </Section>
-        <Areas />
-        <Section>
-          <About />
-        </Section>
         <Section>
           <Services />
         </Section>
+        <Section>
+          <About />
+        </Section>
+        <Areas />
         <Section>
           <Contact />
         </Section>

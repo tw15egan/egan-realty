@@ -67,7 +67,7 @@ switch(process.env.npm_lifecycle_event) {
     config = merge(
       common,
       {
-        devtool: 'source-map'
+        devtool: 'cheap-module-source-map'
       },
       parts.minify()
     );
