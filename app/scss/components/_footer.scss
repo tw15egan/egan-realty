@@ -1,16 +1,27 @@
 .footer {
-  height: 60px;
+  height: auto;
   padding: 1.2rem 1rem;
   background: $green__50;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   color: $white;
   font-size: .875rem;
   
   .contact-list {
     flex-direction: row;
     justify-content: flex-start;
+    
+    @include breakpoint('bp--sm') {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-right: 1rem;
+      
+      & a:first-child {
+        margin-bottom: .5rem;
+      }
+    }
     
     a {
       color: $white;
@@ -29,6 +40,10 @@
 .copyright {
   font-weight: 300;
   
+  @include breakpoint('bp--xs') {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
   
   span {
     color: $white;

@@ -14,14 +14,23 @@
   .icons {
     display: flex;
     list-style: none;
+    width: 100%;
 
     @include breakpoint('bp--sm') {
       flex-direction: column;
       padding: 3rem 5rem;
+      
+      p {
+        width: 50vw;
+      }
     }
 
     @include breakpoint('bp--xs') {
       padding: 3rem 0;
+      
+      p {
+        width: 75vw;
+      }
     }
 
     li {
@@ -29,7 +38,7 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      margin: 0 1rem;
+      margin: 0 2rem;
 
       @include breakpoint('bp--sm') {
         margin: 2rem 1rem;
@@ -49,7 +58,7 @@
       svg {
         width: 7rem;
         fill: white;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
       }
     }
   }

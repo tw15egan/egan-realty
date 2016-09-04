@@ -20,6 +20,8 @@ $bg-troy: url('./../img/troy.jpg');
 
   li {
     font-size: 1.75rem;
+    font-weight: 300;
+    font-style: italic;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,25 +33,21 @@ $bg-troy: url('./../img/troy.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    
-    &:hover {
-      background-color: transparent;
-    }
 
     &:nth-child(1) {
-      background-image: linear-gradient(rgba(#000, 0.5) 0%, rgba(#000, 0.5) 100%), $bg-albany;
+      background-image: linear-gradient(rgba(#000, 0.4) 0%, rgba(#000, 0.75) 100%), $bg-albany;
     }
     
     &:nth-child(2) {
-      background-image: linear-gradient(rgba(#000, 0.5) 0%, rgba(#000, 0.5) 100%), $bg-saratoga;
+      background-image: linear-gradient(rgba(#000, 0.4) 0%, rgba(#000, .75) 100%), $bg-saratoga;
     }
     
     &:nth-child(3) {
-      background-image: linear-gradient(rgba(#000, 0.5) 0%, rgba(#000, 0.5) 100%), $bg-schenectady;
+      background-image: linear-gradient(rgba(#000, 0.4) 0%, rgba(#000, 0.75) 100%), $bg-schenectady;
     }
     
     &:nth-child(4) {
-      background-image: linear-gradient(rgba(#000, 0.5) 0%, rgba(#000, 0.5) 100%), $bg-troy;
+      background-image: linear-gradient(rgba(#000, .4) 0%, rgba(#000, 0.75) 100%), $bg-troy;
     }
   }
 
