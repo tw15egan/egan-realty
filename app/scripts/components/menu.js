@@ -6,9 +6,8 @@ class Menu extends React.Component {
     return (
       <nav className="menu">
         <ul>
-          <li>About Us</li>
-          <li>Services</li>
-          <li>Contact</li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     )

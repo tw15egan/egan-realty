@@ -1,37 +1,33 @@
-$bg-image: url('./../img/6.jpg');
+// $bg-image: url('../img/6.jpg');
 
 .hero {
   min-height: 100vh;
-  background: linear-gradient(rgba(10,10,10,0.9), rgba(10,10,10,0.25) 100%), $bg-image no-repeat center center;
-  background-color: $green__00;
   background-size: cover;
-  padding-top: 108px;
-  padding-bottom: 3rem;
+  background-repeat: no-repeat;
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
 
-  .form {
-    width: 28rem;
-    align-self: flex-start;
-    margin: 3rem 2rem 5rem 2rem;
-    transform: scale(0);
-    transition-delay: .5s;
-    transition: .5s;
-
-    @include breakpoint('bp--sm') {
-      width: 100%;
-      margin: 0;
-      padding: 1rem 3rem;
-      align-self: flex-start;
-    }
-
-    @include breakpoint('bp--xs') {
-      width: 100%;
-      margin: 0;
-      padding: 1rem;
-    }
-  }
+  // .form {
+  //   width: 28rem;
+  //   align-self: flex-start;
+  //   margin: 3rem 2rem 5rem 2rem;
+  //   transform: scale(0);
+  //   transition-delay: .5s;
+  //   transition: .5s;
+  // 
+  //   @include breakpoint('bp--sm') {
+  //     width: 100%;
+  //     margin: 0;
+  //     padding: 1rem 3rem;
+  //     align-self: flex-start;
+  //   }
+  // 
+  //   @include breakpoint('bp--xs') {
+  //     width: 100%;
+  //     margin: 0;
+  //     padding: 1rem;
+  //   }
+  // }
 
   @include breakpoint('bp--sm') {
     flex-direction: column;
