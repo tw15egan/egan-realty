@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>EGAN APPRAISALS, INC.</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://use.typekit.net/eyg6gnx.js"></script>
@@ -9,6 +10,39 @@
     svg {
       max-height: 1rem;
     }
+    * { box-sizing: border-box; margin: 0px; padding: 0px; transition: 0.2s; }
+body, html { height: 100%; }
+#app, .container, body, html { width: 100%; }
+body { font-family: proxima-nova, helvetica; }
+#app { overflow: hidden; }
+.header { z-index: 5; position: fixed; width: 100%; display: flex; -webkit-box-align: end; align-items: flex-end; -webkit-box-pack: justify; justify-content: space-between; padding: 1.2rem 3rem; background: rgb(254, 254, 254); color: rgb(19, 154, 67); box-shadow: rgba(0, 0, 0, 0.419608) 0px 8px 16px -8px; }
+.header__title { display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; flex-direction: column; }
+.header__title--name { font-size: 3rem; font-weight: 700; margin-bottom: -0.5rem; }
+.header__title--tag { color: rgb(152, 152, 152); font-size: 1rem; font-weight: 300; letter-spacing: 0.2px; }
+.header .right-content { display: flex; -webkit-box-align: center; align-items: center; height: 100%; min-height: 70px; }
+.menu { -webkit-box-align: center; align-items: center; margin-right: 2rem; }
+.menu, .menu ul { display: flex; }
+.menu ul { list-style: none; }
+.menu ul li { white-space: nowrap; display: flex; -webkit-box-align: end; align-items: flex-end; margin-right: 2rem; font-size: 1rem; cursor: pointer; }
+.menu ul li a { color: rgb(22, 127, 57); text-decoration: none; }
+.contact-list { display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; flex-direction: column; -webkit-box-pack: center; justify-content: center; -webkit-box-align: start; align-items: flex-start; cursor: pointer; }
+.contact-list__item { min-width: 142px; display: flex; -webkit-box-pack: start; justify-content: flex-start; opacity: 1; background-repeat: no-repeat; background-size: 18px; }
+.contact-list a { text-decoration: none; color: rgb(51, 51, 51); font-size: 0.875rem; font-weight: 300; }
+.header .contact-list__item:nth-child(1) { padding-bottom: 0.5rem; }
+.contact-list__item span { display: flex; -webkit-box-align: center; align-items: center; }
+.contact-list__item span:first-child { padding-right: 0.5rem; }
+svg { max-height: 1rem; }
+.contact-list__item svg { height: 1rem; width: 1rem; }
+.header .contact-list__item svg { fill: rgb(51, 51, 51); }
+.section { width: 100%; height: auto; min-height: 30rem; }
+.hero { min-height: 100vh; background-size: cover; background-repeat: no-repeat; display: flex; -webkit-box-align: start; align-items: flex-start; -webkit-box-orient: vertical; -webkit-box-direction: normal; flex-direction: column; padding: calc(108px + 3rem) 3rem 3rem; }
+.hero h1 { display: inline-block; font-size: 3rem; font-weight: 400; margin-bottom: 2.5rem; width: 100%; max-width: 100%; line-height: 1.5; color: rgb(254, 254, 254); }
+.hero p { font-size: 1.5rem; line-height: 1.5; font-weight: 300; color: rgb(229, 229, 229); max-width: 75%; width: 100%; margin: 1rem 0px 0px; letter-spacing: 0.25px; }
+.form, .form__confirmation { -webkit-box-orient: vertical; -webkit-box-direction: normal; flex-direction: column; }
+.form__confirmation { width: 100%; height: 460px; position: absolute; top: 0px; left: 0px; background-color: rgb(254, 254, 254); border: 1px solid rgb(223, 223, 223); -webkit-box-pack: justify; justify-content: space-between; opacity: 0; display: none; }
+.form__confirmation div { -webkit-box-flex: 10; flex: 10 1 0%; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; flex-direction: column; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; padding: 1rem; text-align: center; }
+.form__confirmation div h1 { margin-bottom: 1rem; }
+.form__hidden { display: none; }
   </style>
 </head>
 <body>
