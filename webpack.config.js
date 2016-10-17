@@ -18,7 +18,7 @@ const common = {
   },
   output: {
     path: PATHS.build,
-    publicPath: '/egan-realty/',
+    // publicPath: '/',
     filename: 'bundle.js',
   },
   module: {
