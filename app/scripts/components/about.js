@@ -3,7 +3,7 @@ const React = require('react');
 // <About />
 class About extends React.Component {
   render() {
-    const profilePic = require('../../img/DSC06806.jpg');
+    const profilePic = require('../../img/tim.jpg');
     return (
       <div className="about">
         <div className="left-content">
