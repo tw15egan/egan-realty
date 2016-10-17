@@ -1,8 +1,3 @@
-$bg-albany: url('./../img/albany.jpg');
-$bg-saratoga: url('./../img/saratoga.jpg');
-$bg-schenectady: url('./../img/schenectady.jpg');
-$bg-troy: url('./../img/troy.jpg');
-
 .areas-banner {
   height: auto;
   display: flex;
@@ -34,21 +29,21 @@ $bg-troy: url('./../img/troy.jpg');
     background-repeat: no-repeat;
     background-position: center center;
 
-    &:nth-child(1) {
-      background-image: linear-gradient(rgba(#000, 0.4) 0%, rgba(#000, 0.75) 100%), $bg-albany;
-    }
-    
-    &:nth-child(2) {
-      background-image: linear-gradient(rgba(#000, 0.4) 0%, rgba(#000, .75) 100%), $bg-saratoga;
-    }
-    
-    &:nth-child(3) {
-      background-image: linear-gradient(rgba(#000, 0.4) 0%, rgba(#000, 0.75) 100%), $bg-schenectady;
-    }
-    
-    &:nth-child(4) {
-      background-image: linear-gradient(rgba(#000, .4) 0%, rgba(#000, 0.75) 100%), $bg-troy;
-    }
+    // &:nth-child(1) {
+    //   background-image: linear-gradient(rgba(#000, 0.4) 0%, rgba(#000, 0.75) 100%), $bg-albany;
+    // }
+    // 
+    // &:nth-child(2) {
+    //   background-image: linear-gradient(rgba(#000, 0.4) 0%, rgba(#000, .75) 100%), $bg-saratoga;
+    // }
+    // 
+    // &:nth-child(3) {
+    //   background-image: linear-gradient(rgba(#000, 0.4) 0%, rgba(#000, 0.75) 100%), $bg-schenectady;
+    // }
+    // 
+    // &:nth-child(4) {
+    //   background-image: linear-gradient(rgba(#000, .4) 0%, rgba(#000, 0.75) 100%), $bg-troy;
+    // }
   }
 
   @include breakpoint('bp--sm') {
