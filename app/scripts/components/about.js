@@ -13,11 +13,10 @@ class About extends React.Component {
         </div>
         <div className="right-content">
           <h1>Meet Timothy Egan</h1>
-          <h3>Licenses</h3>
+          <h3>Licenses & Certifications</h3>
           <ul>
-            <li>Licensed Residential Real Estate Appraiser, State of New York</li>
+            <li>Certified Residential Real Estate Appraiser, State of New York</li>
             <li>Licensed Real Estate Broker, State of New York</li>
-
           </ul>
           {/* <h3>Professional Affiliations</h3>
             <ul>

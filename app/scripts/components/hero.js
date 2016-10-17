@@ -11,7 +11,7 @@ class Hero extends React.Component {
 
     return (
       <div className="hero" style={bgStyles}>
-        <h1 className="big">Are you looking for a licensed real estate appraiser in the Albany region?</h1>
+        <h1 className="big">Are you looking for a certified real estate appraiser in the Albany region?</h1>
         <p>
           Egan Appraisals, Inc. specializes in residential real estate appraisals, offering quality work with competitive turnaround times and pricing.  Our coverage includes Albany, Saratoga, Schenectady and Rensselaer counties.
         </p>
