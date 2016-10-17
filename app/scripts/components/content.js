@@ -5,7 +5,6 @@ import Contact from './contact';
 import Footer from './footer'
 import About from './about';
 import Areas from './areas';
-import Services from './services';
 
 class Content extends React.Component {
   render() {
@@ -13,9 +12,6 @@ class Content extends React.Component {
       <div className="container">
         <Section>
           <Hero />
-        </Section>
-        <Section>
-          <Services />
         </Section>
         <Section>
           <About />

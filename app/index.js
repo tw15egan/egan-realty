@@ -17,10 +17,10 @@ class App extends React.Component {
     const welcome = document.querySelector('.welcome');
     const form = document.querySelector('.form');
 
-    setTimeout(() => {
-      welcome.classList.add('popup');
-      form.classList.add('popup');
-    }, 300);
+    // setTimeout(() => {
+    //   welcome.classList.add('popup');
+    //   form.classList.add('popup');
+    // }, 0);
   }
 
   render() {

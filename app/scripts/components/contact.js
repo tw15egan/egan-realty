@@ -12,7 +12,7 @@ class Contact extends React.Component {
   render() {
   
     return (
-      <div className="contact">
+      <div id="contact" className="contact">
         <div className="contact__map">
           <img className="map" src={map} />
         </div>
