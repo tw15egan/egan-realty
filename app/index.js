@@ -9,8 +9,6 @@ const ReactDOM = require('react-dom');
 
 require('./scss/main.scss');
 
-import 'babel-polyfill';
-
 // <App />
 class App extends React.Component {
   componentDidMount() {
