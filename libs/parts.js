@@ -1,6 +1,30 @@
 const webpack = require('webpack');
 
-exports.devServer = function(options) {
+function minify() {
+  return {
+    plugins: [
+      new webpack.optimize.UglifyJsPlugin({
+        compress: {
+          warnings: false,
+        },
+      }),
+    ],
+  };
+}
+
+function definePlugin() {
+  return {
+    plugins: [
+      new webpack.DefinePlugin({
+        'process.env': {
+          NODE_ENV: JSON.stringify('production'),
+        },
+      }),
+    ],
+  };
+}
+
+function devServer(options) {
   return {
     devServer: {
       historyApiFallback: true,
@@ -8,38 +32,16 @@ exports.devServer = function(options) {
       inline: true,
       stats: 'errors-only',
       host: options.host,
-      port: options.port
+      port: options.port,
     },
     plugins: [
       new webpack.HotModuleReplacementPlugin({
-        multiStep: true
-      })
-    ]
+        multiStep: true,
+      }),
+    ],
   };
 }
 
-exports.minify = function() {
-  return {
-    plugins: [
-      new webpack.optimize.UglifyJsPlugin({
-        beautify: false,
-        comments: false,
-        compress: {
-          warnings: false,
-          drop_console: true
-        },
-        mangle: {
-          except: ['$'],
-          screw_ie8: true,
-          keep_fnames: true
-        }
-      }),
-      new webpack.DefinePlugin({
-        'process.env': {
-          // This has effect on the react lib size
-          'NODE_ENV': JSON.stringify('production'),
-        }
-      }),
-    ]
-  };
-}
+exports.devServer = devServer;
+exports.minify = minify;
+exports.definePlugin = definePlugin;
