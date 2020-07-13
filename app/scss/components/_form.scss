@@ -43,12 +43,12 @@
     height: 4rem;
     padding: 0;
     font-family: $secondary-font-family;
-    font-weight: 700; 
+    font-weight: 700;
   }
 
   &__container {
     position: relative;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
     background-color: $white;
     border-radius: 3px;
 
@@ -65,7 +65,7 @@
   &__input,
   &__message {
     position: relative;
-    padding: 0 .8rem;
+    padding: 0 0.8rem;
     z-index: 2;
     background: transparent;
     font-size: 1rem;
@@ -94,17 +94,15 @@
     left: 1.2rem;
     color: #ababab;
     z-index: 1;
-    transition: 275ms;
 
     &.active {
-      color: rgba($green__20, .4);
+      color: rgba($green__20, 0.4);
     }
   }
 
   &__message {
     height: 100%;
     padding-top: 1.1rem;
-    
 
     &.active {
       padding-top: 1.75rem;
@@ -123,7 +121,6 @@
     width: 100%;
     color: white;
     cursor: pointer;
-    transition: 275ms;
     border: 3px solid $black;
 
     &:hover {

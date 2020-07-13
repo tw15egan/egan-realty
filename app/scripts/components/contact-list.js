@@ -2,30 +2,70 @@ const React = require('react');
 
 // <ContactList />
 class ContactList extends React.Component {
-
   render() {
     return (
       <div className="contact-list">
-        <a href="tel:518-220-1110" className="contact-list__item contact-list__item--phone">
+        <a
+          href="tel:518-220-1110"
+          className="contact-list__item contact-list__item--phone">
           <span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 578.106 578.106">
-              <path d="M577.83 456.128c1.225 9.385-1.635 17.545-8.568 24.48l-81.396 80.78c-3.672 4.08-8.465 7.552-14.38 10.405-5.917 2.857-11.73 4.693-17.44 5.508-.408 0-1.635.11-3.676.31-2.037.21-4.69.31-7.953.31-7.754 0-20.3-1.32-37.64-3.98s-38.556-9.18-63.646-19.58c-25.09-10.4-53.55-26.01-85.37-46.82-31.82-20.8-65.69-49.36-101.59-85.68-28.56-28.15-52.22-55.08-70.99-80.78-18.76-25.7-33.86-49.47-45.28-71.3-11.43-21.83-20-41.61-25.71-59.36s-9.59-33.045-11.63-45.9-2.86-22.95-2.45-30.3c.41-7.343.612-11.423.612-12.24.813-5.71 2.65-11.525 5.505-17.44S12.55 93.83 16.63 90.156l81.39-81.4C103.73 3.046 110.26.19 117.603.19c5.304 0 9.996 1.53 14.076 4.59s7.55 6.834 10.405 11.322l65.484 124.236c3.67 6.528 4.69 13.668 3.06 21.42-1.634 7.752-5.1 14.28-10.406 19.584l-29.988 29.988c-.816.816-1.53 2.142-2.142 3.978s-.918 3.366-.918 4.59c1.632 8.568 5.304 18.36 11.016 29.376 4.896 9.792 12.444 21.726 22.644 35.802s24.684 30.293 43.452 48.653c18.36 18.77 34.68 33.35 48.96 43.76 14.274 10.4 26.212 18.05 35.8 22.95 9.59 4.89 16.94 7.85 22.03 8.87l7.65 1.53c.82 0 2.15-.31 3.98-.92 1.84-.62 3.17-1.33 3.98-2.15l34.89-35.498c7.35-6.52 15.91-9.79 25.71-9.79 6.937 0 12.442 1.23 16.522 3.68h.61l118.11 69.76c8.57 5.31 13.67 12.04 15.305 20.2z"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              fill="currentColor"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              aria-hidden="true">
+              <path d="M26,29h-.17C6.18,27.87,3.39,11.29,3,6.23A3,3,0,0,1,5.76,3h5.51a2,2,0,0,1,1.86,1.26L14.65,8a2,2,0,0,1-.44,2.16l-2.13,2.15a9.37,9.37,0,0,0,7.58,7.6l2.17-2.15A2,2,0,0,1,24,17.35l3.77,1.51A2,2,0,0,1,29,20.72V26A3,3,0,0,1,26,29ZM6,5A1,1,0,0,0,5,6v.08C5.46,12,8.41,26,25.94,27A1,1,0,0,0,27,26.06V20.72l-3.77-1.51-2.87,2.85L19.88,22C11.18,20.91,10,12.21,10,12.12l-.06-.48,2.84-2.87L11.28,5Z" />
+              <title>Phone</title>
             </svg>
           </span>
           <span>(518) 220-1110</span>
         </a>
-        <a href="mailto:eganappr@gmail.com" className="contact-list__item contact-list__item--email">
+        <a
+          href="mailto:eganappr@gmail.com"
+          className="contact-list__item contact-list__item--email">
           <span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
-              <path d="M7 9L5.268 7.484.316 11.73c.18.166.423.27.69.27h11.987c.267 0 .51-.104.688-.27L8.735 7.483 7 9z"/>
-              <path d="M13.684 2.27c-.18-.167-.422-.27-.69-.27H1.006c-.267 0-.51.104-.69.273L7 8l6.684-5.73zM0 2.878v8.308L4.833 7.08m4.334 0L14 11.185v-8.31"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              fill="currentColor"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              aria-hidden="true">
+              <path d="M28,6H4A2,2,0,0,0,2,8V24a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V8A2,2,0,0,0,28,6ZM25.8,8,16,14.78,6.2,8ZM4,24V8.91l11.43,7.91a1,1,0,0,0,1.14,0L28,8.91V24Z" />
+              <title>Email</title>
             </svg>
           </span>
           <span>eganappr@gmail.com</span>
         </a>
+        <a
+          href="https://www.dos.ny.gov/licensing/docs/FairHousingNotice_new.pdf"
+          className="contact-list__item contact-list__item--email">
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              fill="currentColor"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              aria-hidden="true">
+              <path d="M30 18L30 16 24 16 24 26 26 26 26 22 29 22 29 20 26 20 26 18 30 18zM19 26H15V16h4a3.0033 3.0033 0 013 3v4A3.0033 3.0033 0 0119 26zm-2-2h2a1.0011 1.0011 0 001-1V19a1.0011 1.0011 0 00-1-1H17zM11 16H6V26H8V23h3a2.0027 2.0027 0 002-2V18A2.0023 2.0023 0 0011 16zM8 21V18h3l.001 3z" />
+              <path d="M22,14V10a.9092.9092,0,0,0-.3-.7l-7-7A.9087.9087,0,0,0,14,2H4A2.0059,2.0059,0,0,0,2,4V28a2,2,0,0,0,2,2H20V28H4V4h8v6a2.0059,2.0059,0,0,0,2,2h6v2Zm-8-4V4.4L19.6,10Z" />
+              <title>document--pdf</title>
+            </svg>
+          </span>
+          <span>Fair Housing Notice</span>
+        </a>
       </div>
-    )
+    );
   }
-};
+}
 
 export default ContactList;

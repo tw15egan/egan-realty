@@ -7,30 +7,15 @@
   display: flex;
   align-items: flex-start;
 
-  // .form {
-  //   width: 28rem;
-  //   align-self: flex-start;
-  //   margin: 3rem 2rem 5rem 2rem;
-  //   transform: scale(0);
-  //   transition-delay: .5s;
-  //   transition: .5s;
-  // 
-  //   @include breakpoint('bp--sm') {
-  //     width: 100%;
-  //     margin: 0;
-  //     padding: 1rem 3rem;
-  //     align-self: flex-start;
-  //   }
-  // 
-  //   @include breakpoint('bp--xs') {
-  //     width: 100%;
-  //     margin: 0;
-  //     padding: 1rem;
-  //   }
-  // }
-
   @include breakpoint('bp--sm') {
     flex-direction: column;
     padding-bottom: 3rem;
+  }
+}
+
+.fair-housing {
+  display: none;
+  @media (max-width: 900px) {
+    display: block;
   }
 }

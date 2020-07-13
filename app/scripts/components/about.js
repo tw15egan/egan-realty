@@ -5,10 +5,10 @@ class About extends React.Component {
   render() {
     const profilePic = require('../../img/tim.jpg');
     return (
-      <div className="about">
+      <div id="about" className="about">
         <div className="left-content">
           <div className="profile">
-            <img src={profilePic} />
+            <img alt="Timothy Egan" src={profilePic} />
           </div>
         </div>
         <div className="right-content">

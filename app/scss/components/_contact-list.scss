@@ -1,45 +1,45 @@
 .contact-list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
   cursor: pointer;
 
   a {
     text-decoration: none;
     color: #333;
-    font-size: .875rem;
+    font-size: 0.875rem;
     font-weight: 300;
+    margin-bottom: 0.25rem;
   }
 
   &__item {
-    min-width: 142px;
     display: flex;
     justify-content: flex-start;
     opacity: 1;
     background-repeat: no-repeat;
     background-size: 18px;
-    
+
     @include breakpoint('bp--sm') {
       min-width: 20px;
     }
-    
+
     svg {
       height: 1rem;
       width: 1rem;
     }
-    
+
     span {
       display: flex;
       align-items: center;
-      
+
       &:first-child {
-        padding-right: .5rem;
+        padding-right: 0.5rem;
       }
     }
 
     &:hover {
-      opacity: .75;
+      opacity: 0.75;
     }
   }
 }
